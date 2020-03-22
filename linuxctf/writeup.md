@@ -102,6 +102,89 @@ We can manually read this file and track down our alias, or we can grep it.
 
 ### 2:
 'Flag12 is located where MOTD's are usually found on an ubuntu OS. What is flag12?'
+I used locate for this one, `locate motd` pointed me to /etc/update-motd.d 
+In this folder were a few files, I read the first one, and find the flag at the bottom.
+
+### 3:
+'Find the difference between two script files to find flag 13'
+diff is the tool for finding the difference between two files, so we'll use that.
+`locate flag13` shows us that these scripts are in a folder inside bob's home directory.
+We'll cd into that folder, and diff the files. `cd /home/bob/flag13`, then:
+`diff script1 script2` shows us a flag in one file, but not the other.
+
+### 4:
+'Where on the file system are logs usually stored? Find flag 14'
+logs are often stored in /var/log. We'll go here, and `ls` the files.
+We can now see the craftily named 'flagtourteen.txt' - guess this would stop us from seaching for it.
+If we read this file, we see the final line is a flag.
+
+### 5:
+'Can you find information about the system, such as the kernel version etc'
+My first instinct here is to use `uname` so I use `man uname`, find the -a/--all flag shoud list all informtation, and try that.
+Using that, doesn't seem to be a flag in there. 
+Googling suggests we can find system info in /proc/version, but reading this doesn't seem  to show a flag.
+`lshw` lists hardware, but also doesn't seem to have a flag.
+Some further research finds a program lsb-release, which lists system info. but using `lsb_release -a` doesn't seem to show a flag.
+After cheating and looking at a walkthrough, it appears that the flag is within the file /etc/lsb-release.
+I'm not sure if I was misusing the command for lsb-release, or it was setup incorrectly. Either way, `cat /etc/lsb-release` finds our flag15
+
+### 6:
+'Flag 16 lies within another system mount'
+From a stackoverflow answer, I find that /media is 'for the system to mount its stuff'. Lets check that dir out.
+`ls /media` shows us 1 folder, 'f'. I've got an idea where this is heading, so lets `ls /media/` and let tab completion show us where it ends.
+Looks like at the end of the tabs, is our flag.
+
+### 7:
+'Log in to Alice's account using her private key and get flag 17'
+The notes at the top tell us Alice's private key doesn't work, so lets just `su alice` and use the password provided.
+We find flag17 in her home dir, so `cat` that and let's move on.
+
+### 8:
+'Find the hidden flag 18'
+Let's take a wild leap and assume flag 18  is a hidden file. `ls -a` will list files, including hidden ones.
+so `ls -a` and wouldn't you know it, .flag18 - `cat .flag18` and onwards
+
+### 9:
+'Read the 2345th line of the file that contains flag 19'
+If we `cat flag19` we'll see it's a long file which we don't want to manually comb through.
+We can list the top x lines of a file using head, and the bottom y lines using tail. Let's pipe this up.
+`cat flag19  | head -2345 | tail -1` finds us our key, completing task 3. Congrats.
+
+## Task 4 - Data Representation, Strings and Permissions 
+
+### 1:
+'Find and retrieve flag 20'
+Again, looks like a find one.
+`locate flag20` shows that it's actually just in alice's home dir, so let's `cat flag20`.
+Doesn't seem to work, and there's a distinct '=' at the end, despite all the other flags being alphanumerics only.
+The hint gives it away, the flag is base64 encoded. Let's decode and solve. `man base64` shows us the syntax for decode, so
+`base64 -d flag20` gives us our flag.
+
+### 2:
+'Inspect the flag21.php file. Find the flag.'
+`locate flag21.php` shows us this file is in bob's home dir, lets check it out.
+`cat /home/bob/flag21.php` gives us a clue, that there's more to it than we think.
+`man more` tells us that `less` actually gives more emulation plus enhancements. `more flag21.php` doesn't seem to give us any more. (without delving into the options) let's try less.
+`less flag21.php` shows us our shortest flag yet, and a little praise.
+
+### 3:
+'Locate and read flag22. It's represented as hex.'
+`locate flag22` shows us this flag is in alice's home dir, lets read it. Unsurprisingly, this appears to be in hex representation.
+We can use xxd to decode this, so `man xxd`
+From this, it looks like -r/-revert will reverse the operation. `xxd -r flag22` gives us our decoded flag. Hooray
+
+### 4:
+'Locate, read and reverse flag 23'
+Seems easy enough, just need to reverse it. We could manually type this in after a `cat` but let's obviously not.
+rev is a utility which serves this exact purpose, so let's use it. `rev flag23` gives us our reversed and correct flag.
+
+### 5: 
+'Analyse the flag 24 compiled C program. Find a command that might reveal human readable strings when looking in the source code.'
+The compiled flag 24 program is naturally not human readable, but there's a nice command that can find strings within a compiled file, aptly named 'strings'.
+`locate flag24` shows us it's in garry's home directory. let's go there and run 
+`strings flag24` will show us our compiled flag.
+
+### 6: 
 
  
 
