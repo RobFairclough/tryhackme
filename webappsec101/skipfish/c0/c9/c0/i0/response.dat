@@ -1,0 +1,114 @@
+HTTP/1.1 200 Partial Content
+Date: Tue, 07 Apr 2020 13:21:09 GMT
+Server: Apache/2.4.7 (Ubuntu)
+X-Powered-By: PHP/5.5.9-1ubuntu4.24
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-1382/1383
+Content-Length: 1383
+Keep-Alive: timeout=5, max=1
+Connection: Keep-Alive
+Content-Type: text/html
+
+
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/blueprint/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="/css/blueprint/print.css" type="text/css" media="print">
+    <!--[if IE]><link rel="stylesheet" href="/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="/css/stylings.css" type="text/css" media="screen">
+    <title>WackoPicko.com</title>
+  </head>
+  <body>
+    <div class="container " style="border: 2px solid #5c95cf;">
+      <div class="column span-24 first last">
+	<h1 id="title"><a href="/">WackoPicko.com</a></h1>
+      </div>
+      <div id="menu">
+	<div class="column prepend-1 span-14 first">
+	  <ul class="menu">
+	    <li class=""><a href="/users/home.php"><span>Home</span></a></li>
+	    <li class=""><a href="/pictures/upload.php"><span>Upload</span></a></li>
+	    <li class=""><a href="/pictures/recent.php"><span>Recent</span></a></li>
+            <li class="current"><a href="/guestbook.php"><span>Guestbook</span></a></li>
+
+      	  </ul>
+	</div>
+	<div class="column prepend-1 span-7 first last">
+	  <ul class="menu top_login" >
+      	    <li><a href="/users/login.php"><Span>Login</span></a></li>
+      	  </ul>
+	</div>
+      </div>
+
+
+
+      <div class="column span-24 first last" id="search_bar_blue">
+	<div class="column prepend-17 span-7 first last" id="search_box">
+	  <form action="/pictures/search.php" method="get" style="display:inline;">
+	    <input id="query2" name="query" size="15" style="padding: 2px; font-size: 16px; text-decoration:none;border:none;vertical-align:middle;" type="text" value=""/>
+	    <input src="/images/search_button_white.gif" type="image" style="border: 0pt none ; position: relative; top: 0px;vertical-align:middle;margin-left: 1em;" />
+	  </form>
+	</div>
+      </div>
+   
+<div class="column prepend-1 span-24 first last">
+<h2>Guestbook</h2>
+<h4>See what people are saying about us!</h4>
+
+	<p class="comment">9876sfi</p>
+	<p> - by Smith </p>
+		<p class="comment">9876sfi</p>
+	<p> - by Smith </p>
+		<p class="comment">9876sfi</p>
+	<p> - by Smith </p>
+		<p class="comment">skipfish</p>
+	<p> - by %2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2F..%2Fetc%2Fhosts </p>
+		<p class="comment">skipfish</p>
+	<p> - by /../../../../../../../../../etc/hosts </p>
+		<p class="comment">skipfish</p>
+	<p> - by /../../../../../../../../../etc/hosts </p>
+		<p class="comment">skipfish</p>
+	<p> - by http://www.google.com/humans.txt#foo= </p>
+		<p class="comment">skipfish</p>
+	<p> - by Smith </p>
+		<p class="comment">skipfish</p>
+	<p> - by Smith </p>
+		<p class="comment">skipfish</p>
+	<p> - by .htaccess.aspx--&gt;&quot;&gt;'&gt;'&quot;&lt;sfi000163v322511&gt; </p>
+		<p class="comment">skipfish</p>
+	<p> - by Smith </p>
+		<p class="comment">skipfish</p>
+	<p> - by Smith--&gt;&quot;&gt;'&gt;'&quot;&lt;sfi000162v322511&gt; </p>
+		<p class="comment">skipfish</p>
+	<p> - by +/skipfish-bom </p>
+		<p class="comment">9876sfi</p>
+	<p> - by Smith </p>
+		<p class="comment">9876sfi</p>
+	<p> - by Smith </p>
+		<p class="comment">9876sfi</p>
+	<p> - by Smith </p>
+		<p class="comment">9876sfi</p>
+	<p> - by Smith </p>
+		<p class="comment">9876sfi</p>
+	<p> - by Smith </p>
+		<p class="comment">skipfish</p>
+	<p> - by SmithbogusSkipfish-Inject:bogus </p>
+		<p class="comment">skipfish</p>
+	<p> - by Smithbogus
+Skipfish-Inject:bogus </p>
+		<p class="comment">9876sfi</p>
+	<p> - by Smith </p>
+		<p class="comment">9876sfi</p>
+	<p> - by Smith </p>
+		<p class="comment">9876sfi</p>
+	<p> - by Smith </p>
+		<p class="comment">9876sfi</p>
+	<p> - by Smith </p>
+		<p class="comment">skipfish</p>
+	<p> - by /../../../../../../../../../etc/passwd </p>
+		<p class="comment">skipfish</p>
+	<p> - by file:///etc/hosts

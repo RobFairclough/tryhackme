@@ -1,0 +1,12 @@
+POST /guestbook.php HTTP/1.1
+Host: 10.10.237.237
+Accept-Encoding: gzip
+Connection: keep-alive
+User-Agent: Mozilla/5.0 SF/2.10b
+Range: bytes=0-399999
+Referer: http://10.10.237.237/
+Cookie: PHPSESSID=njili16u8u006cgnamitag7is3
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 23
+
+name=Smith&comment=link

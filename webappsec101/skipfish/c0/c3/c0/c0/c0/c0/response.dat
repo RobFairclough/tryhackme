@@ -1,0 +1,28 @@
+HTTP/1.1 200 Partial Content
+Date: Tue, 07 Apr 2020 13:20:55 GMT
+Server: Apache/2.4.7 (Ubuntu)
+Last-Modified: Thu, 02 Feb 2017 22:24:09 GMT
+ETag: "154-547939fb8b440-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-214/215
+Content-Length: 215
+Keep-Alive: timeout=5, max=96
+Connection: Keep-Alive
+Content-Type: text/plain
+
+Fancy Type
+
+* Gives you classes to use if you'd like some 
+  extra fancy typography. 
+
+Credits and instructions are specified above each class
+in the fancy-type.css file in this directory.
+
+
+Usage
+----------------------------------------------------------------
+
+1) Add this plugin to lib/settings.yml.
+   See compress.rb for instructions.

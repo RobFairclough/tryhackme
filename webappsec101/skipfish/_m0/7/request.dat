@@ -1,0 +1,25 @@
+POST /pic'%20%2B%20'check'%20%2B%20'.php HTTP/1.1
+Host: 10.10.237.237
+Accept-Encoding: gzip
+Connection: keep-alive
+User-Agent: Mozilla/5.0 SF/2.10b
+Range: bytes=0-399999
+Referer: http://10.10.237.237/
+Cookie: PHPSESSID=njili16u8u006cgnamitag7is3
+Content-Type: multipart/form-data; boundary=sf991637
+Content-Length: 309
+
+--sf991637
+Content-Disposition: form-data; name="MAX_FILE_SIZE"
+
+30000
+--sf991637
+Content-Disposition: form-data; name="userfile"; filename="sfish8.gif"
+Content-Type: image/gif
+
+GIF89a,<html>-->">'>'"<sfi000284v322511>
+--sf991637
+Content-Disposition: form-data; name="name"
+
+Smith
+--sf991637--

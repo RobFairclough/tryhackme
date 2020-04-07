@@ -1,0 +1,16 @@
+HTTP/1.1 200 Partial Content
+Date: Tue, 07 Apr 2020 13:20:52 GMT
+Server: Apache/2.4.7 (Ubuntu)
+X-Powered-By: PHP/5.5.9-1ubuntu4.24
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Range: bytes 0-195/196
+Content-Length: 196
+Keep-Alive: timeout=5, max=94
+Connection: Keep-Alive
+Content-Type: text/html
+
+<br />
+<b>Warning</b>:  require_once(.php): failed to open stream: No such file or directory in <b>/app/admin/index.php</b> on line <b>4</b><br />
+<br />
+<b>Fatal error</b>:  require_once(): Failed opening required '.php' (include_path='.:/usr/share/php:/usr/share/pear') in <b>/app/admin/index.php</b> on line <b>4</b><br />

@@ -1,0 +1,8 @@
+var child = [
+  { 'dupe': true, 'type': 32, 'name': 'back.gif', 'dir': 'c0', 'linked': 2, 'url': 'http://10.10.237.237/icons/back.gif', 'fetched': false, 'error': 'Limits exceeded', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xded6f368 },
+  { 'dupe': true, 'type': 32, 'name': 'blank.gif', 'dir': 'c1', 'linked': 2, 'url': 'http://10.10.237.237/icons/blank.gif', 'fetched': false, 'error': 'Limits exceeded', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xded6f368 },
+  { 'dupe': true, 'type': 32, 'name': 'folder.gif', 'dir': 'c2', 'linked': 2, 'url': 'http://10.10.237.237/icons/folder.gif', 'fetched': false, 'error': 'Limits exceeded', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xded6f368 },
+  { 'dupe': true, 'type': 32, 'name': 'image2.gif', 'dir': 'c3', 'linked': 2, 'url': 'http://10.10.237.237/icons/image2.gif', 'fetched': false, 'error': 'Limits exceeded', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xded6f368 },
+  { 'dupe': true, 'type': 32, 'name': 'text.gif', 'dir': 'c4', 'linked': 2, 'url': 'http://10.10.237.237/icons/text.gif', 'fetched': false, 'error': 'Limits exceeded', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xded6f368 },
+  { 'dupe': true, 'type': 32, 'name': 'unknown.gif', 'dir': 'c5', 'linked': 2, 'url': 'http://10.10.237.237/icons/unknown.gif', 'fetched': false, 'error': 'Limits exceeded', 'missing': false, 'csens': false, 'child_cnt': 0, 'issue_cnt': [ 0, 0, 0, 0, 0 ], 'sig': 0xded6f368 }
+];

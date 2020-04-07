@@ -1,0 +1,9 @@
+GET / HTTP/1.1
+Host: 10.10.237.237
+Accept-Encoding: gzip
+Connection: keep-alive
+Range: bytes=0-399999
+Referer: -->">'>'"<sfi000002v322511>
+User-Agent: -->">'>'"<sfi000002v322511>
+Cookie: PHPSESSID=njili16u8u006cgnamitag7is3
+
