@@ -71,3 +71,9 @@ Also ran a dirbuster to find other paths, which seems to find all the file direc
 ### Logic flaw: try to get an item for free
 options for a logic attack - set our own price? reduce price of item? discount codes?
 hint tells us to use discount codes so let's try that first
+After the dirbuster scan, came across the /calendar route, which on a few days showed a discount code:
+SUPERYOU21 
+going to the checkout and using this code we find that we can just add it again and again.
+as a result, we can just spam the http request for adding that coupon. After a certain number the request was 'blocked' maybe ddos protection?
+So we've not got it free, but down to 0.4639... down from 15
+
