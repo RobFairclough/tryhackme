@@ -1,0 +1,42 @@
+DirBuster 1.0-RC1 - Report
+http://www.owasp.org/index.php/Category:OWASP_DirBuster_Project
+Report produced on Wed Apr 08 14:01:07 BST 2020
+--------------------------------
+
+http://10.10.223.42:80
+--------------------------------
+Directories found during testing:
+
+Dirs found with a 200 response:
+
+/
+/guidelines/
+
+Dirs found with a 403 response:
+
+/icons/
+/icons/small/
+
+Dirs found with a 401 response:
+
+/protected/
+
+
+--------------------------------
+Files found during testing:
+
+Files found with a 301 responce:
+
+/guidelines
+/icons/small
+
+Files found with a 401 responce:
+
+/protected
+
+Files found with a 200 responce:
+
+/icons/README
+
+
+--------------------------------
