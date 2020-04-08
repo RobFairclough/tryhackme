@@ -37,7 +37,37 @@ This becomes a query string that is executed on page load, w/potential for redir
 Same attack, but persisted here so any user visiting the guestbook would receive my alert. 
 Much more dangerous as there's no telltale query string for this one.
 ### Test for XSS behind the flash form on the home page
-Can't see a flash form here with firefox
+Can't see a flash form here with firefox and chromiom just shows this plugin is not supported.
+Don't want to jump throughb hoops for this so skipping it.
 
+## Task 6 - Injection
+### Perform command injection on the check password field
+The passcheck runs a command (and tell us about it) to exploit this we can pipe into any command of our choice.
+in this case we don't seem to receive a response so can't return data, but potentially could add a user to the system, remove files
+x | chmod /etc/passwd 777 # seems to have broken the site completely
+x | rm -rf ~/ # should wipe the whole site from the server
+potential to use curl to send files to a remote server? hijack the server's resource for mining? other nefarious purposes?
+give ourselves a shell into the machine maybe? this would be a fun avenue to check out
+### Check for sqli on the application
+Couple of vulnerabilities here:
+registration -> similar usernames, using 1' or 1=1 #-- as all fields seems to list out all users.
+Login: same vulnerability above logs us in as a sample user, 1' OR {username col name} = {username}
+would log us in as anyone, couldn't seem to crack the username column name with a few guesses but enumerating this would get it.
 
+## Task 7 - Miscellaneous and logic flaws
+### Find a parameter manipulation vulnerability
+We used this to find bryce, the sample user with ?id={id} combined with sequential ids allowed us to check out every user.
 
+### Find a directory traversal vulnerability
+Had to look for some help with this one - was just trying to exploit the url bar.
+File upload is vulnerable to this via the tag function - we can upload a file to replace existing files on the server.
+This means we can, for example, use the path to the index, ../index.php and replace it with our own hostile index.php to phish/watering hole attack users.
+
+### Find a forceful browsing vulnerability
+Hint was 'try to access a restricted image' 
+We were able to do this just by going through steps to purchase, where we're given the high quality link before we actually pay.
+Also ran a dirbuster to find other paths, which seems to find all the file directories and via the /upload directory we can view any image in high quality. 
+
+### Logic flaw: try to get an item for free
+options for a logic attack - set our own price? reduce price of item? discount codes?
+hint tells us to use discount codes so let's try that first
