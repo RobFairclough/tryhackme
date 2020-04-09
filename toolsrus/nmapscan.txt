@@ -1,0 +1,16 @@
+# Nmap 7.80 scan initiated Thu Apr  9 12:26:06 2020 as: nmap -sV -vv -o nmapscan.txt 10.10.133.222
+Nmap scan report for 10.10.133.222
+Host is up, received conn-refused (0.033s latency).
+Scanned at 2020-04-09 12:26:06 BST for 8s
+Not shown: 996 closed ports
+Reason: 996 conn-refused
+PORT     STATE SERVICE REASON  VERSION
+22/tcp   open  ssh     syn-ack OpenSSH 7.2p2 Ubuntu 4ubuntu2.8 (Ubuntu Linux; protocol 2.0)
+80/tcp   open  http    syn-ack Apache httpd 2.4.18 ((Ubuntu))
+1234/tcp open  http    syn-ack Apache Tomcat/Coyote JSP engine 1.1
+8009/tcp open  ajp13   syn-ack Apache Jserv (Protocol v1.3)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Apr  9 12:26:14 2020 -- 1 IP address (1 host up) scanned in 7.43 seconds

