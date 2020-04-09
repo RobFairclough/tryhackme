@@ -28,11 +28,14 @@ nikto -host 10.10.70.107 -root /manager/html -port 1234 -output $(pwd)/niktoscan
 
 ### What is the server version?
 Hint says to look in nikto output but haven't spotted anything in here yet..
+Got myself too focussed on scanning port 1234, turns out the server in question is port 80.
+command used:
+nikto -id bob:bubbles -h http://10.10.170.249:80
 
 ### What version of Apache-Coyote is this service using?
 This info was in the nikto output - 1.1
 
 ### Use Metasploit to exploit the service and get a shell on the system. WHat user did you get a shell as?
-
+moving over to msf room
 
 ### What text is in the file /root/flag.txt

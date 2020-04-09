@@ -1,0 +1,97 @@
+- Nikto v2.1.6/2.1.5
++ Target Host: 10.10.47.39
++ Target Port: 1234
++ GET The anti-clickjacking X-Frame-Options header is not present.
++ GET The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ GET The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ GET Successfully authenticated to realm 'Tomcat Manager Application' with user-supplied credentials.
++ OPTIONS Allowed HTTP Methods: GET, HEAD, POST, PUT, DELETE, OPTIONS 
++ OSVDB-397: GET /manager/html: HTTP method ('Allow' Header): 'PUT' method could allow clients to save files on the web server.
++ OSVDB-5646: GET /manager/html: HTTP method ('Allow' Header): 'DELETE' may allow clients to remove files on the web server.
++ GET /manager/html/cgi.cgi/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/webcgi/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-914/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-915/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/bin/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/mpcgi/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-bin/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/ows-bin/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-sys/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-local/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/htbin/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgibin/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgis/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/scripts/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-win/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/fcgi-bin/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-exe/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-home/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-perl/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/scgi-bin/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-bin-sdb/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-mod/blog/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi.cgi/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/webcgi/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-914/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-915/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/bin/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/mpcgi/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-bin/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/ows-bin/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-sys/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-local/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/htbin/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgibin/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgis/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/scripts/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-win/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/fcgi-bin/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-exe/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-home/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-perl/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/scgi-bin/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-bin-sdb/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-mod/mt-static/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi.cgi/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/webcgi/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-914/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-915/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/bin/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/mpcgi/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-bin/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/ows-bin/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-sys/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-local/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/htbin/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgibin/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgis/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/scripts/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-win/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/fcgi-bin/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-exe/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-home/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-perl/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/scgi-bin/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-bin-sdb/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ GET /manager/html/cgi-mod/mt/mt.cfg: Movable Type configuration file found. Should not be available remotely.
++ OSVDB-3092: GET /manager/html/localstart.asp: This may be interesting...
++ OSVDB-3233: GET /manager/html/manager/manager-howto.html: Tomcat documentation found.
++ OSVDB-3233: GET /manager/html/jk-manager/manager-howto.html: Tomcat documentation found.
++ OSVDB-3233: GET /manager/html/jk-status/manager-howto.html: Tomcat documentation found.
++ OSVDB-3233: GET /manager/html/admin/manager-howto.html: Tomcat documentation found.
++ OSVDB-3233: GET /manager/html/host-manager/manager-howto.html: Tomcat documentation found.
++ GET /manager/html/manager/html: Default Tomcat Manager / Host Manager interface found
++ GET /manager/html/jk-manager/html: Default Tomcat Manager / Host Manager interface found
++ GET /manager/html/jk-status/html: Default Tomcat Manager / Host Manager interface found
++ GET /manager/html/admin/html: Default Tomcat Manager / Host Manager interface found
++ GET /manager/html/host-manager/html: Default Tomcat Manager / Host Manager interface found
++ GET /manager/html/httpd.conf: Apache httpd.conf configuration file
++ GET /manager/html/httpd.conf.bak: Apache httpd.conf configuration file
++ GET /manager/html/manager/status: Default Tomcat Server Status interface found
++ GET /manager/html/jk-manager/status: Default Tomcat Server Status interface found
++ GET /manager/html/jk-status/status: Default Tomcat Server Status interface found
++ GET /manager/html/admin/status: Default Tomcat Server Status interface found
++ GET /manager/html/host-manager/status: Default Tomcat Server Status interface found
