@@ -1,0 +1,41 @@
+# Nmap 7.80 scan initiated Sun Apr 19 11:50:52 2020 as: nmap --script=vuln -oN nmapvuln -vvv 10.10.27.171
+Pre-scan script results:
+| broadcast-avahi-dos: 
+|   Discovered hosts:
+|     224.0.0.251
+|   After NULL UDP avahi packet DoS (CVE-2011-1002).
+|_  Hosts are all up (not vulnerable).
+Nmap scan report for 10.10.27.171
+Host is up, received echo-reply ttl 63 (0.031s latency).
+Scanned at 2020-04-19 11:51:27 BST for 30s
+Not shown: 994 closed ports
+Reason: 994 resets
+PORT     STATE SERVICE      REASON
+21/tcp   open  ftp          syn-ack ttl 63
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+|_sslv2-drown: 
+22/tcp   open  ssh          syn-ack ttl 63
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+139/tcp  open  netbios-ssn  syn-ack ttl 63
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+445/tcp  open  microsoft-ds syn-ack ttl 63
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+3128/tcp open  squid-http   syn-ack ttl 63
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+3333/tcp open  dec-notes    syn-ack ttl 63
+|_clamav-exec: ERROR: Script execution failed (use -d to debug)
+
+Host script results:
+|_smb-vuln-ms10-054: false
+|_smb-vuln-ms10-061: false
+| smb-vuln-regsvc-dos: 
+|   VULNERABLE:
+|   Service regsvc in Microsoft Windows systems vulnerable to denial of service
+|     State: VULNERABLE
+|       The service regsvc in Microsoft Windows 2000 systems is vulnerable to denial of service caused by a null deference
+|       pointer. This script will crash the service if it is vulnerable. This vulnerability was discovered by Ron Bowes
+|       while working on smb-enum-sessions.
+|_          
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Apr 19 11:51:57 2020 -- 1 IP address (1 host up) scanned in 64.97 seconds
