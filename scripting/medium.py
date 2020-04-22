@@ -22,8 +22,8 @@ while True:
         sock = socket.socket()
         sock.connect((host, curPort))
         print('connected to port', curPort)
-        if curPort == 9765:
-            print('done, port 9765 reached')
+        if curPort == finalPort:
+            print(f'done, port {finalPort} reached')
             print('final number: ', num)
             print('rounded to two decimals: ', round(num, 2))
             break
