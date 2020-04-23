@@ -13,3 +13,11 @@ Use this general approach(use Python3 here as well):
     Use the Python sockets library to create a UDP socket and send the aforementioned packets to the server
     use the PyCA encyption library and follow the instructions from the server
 
+First payload to send is 'hello'
+first response: `You've connected to the super secret server, send a packet with the payload ready to receive more information`
+
+Second payload to send is 'ready'
+second response: `key:thisisaverysecretkeyl337 iv:secureivl337 to decrypt and find the flag that has a SHA256 checksum of ]w�ҿwx`T�U�Ms��'�΁n�h�]rbc�� send final in the next payload to receive all the encrypted flags` - font missing chars? 
+
+payload to repeat ad infinitum from here is 'final'
+send in pairs for text & tag, decrypt and check against the checksum
