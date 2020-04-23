@@ -1,0 +1,92 @@
+`identify -verbose WindowsXP.jpg`
+
+Image: WindowsXP.jpg
+  Format: JPEG (Joint Photographic Experts Group JFIF format)
+  Mime type: image/jpeg
+  Class: DirectClass
+  Geometry: 1920x1080+0+0
+  Units: Undefined
+  Colorspace: sRGB
+  Type: TrueColor
+  Base type: Undefined
+  Endianess: Undefined
+  Depth: 8-bit
+  Channel depth:
+    red: 8-bit
+    green: 8-bit
+    blue: 8-bit
+  Channel statistics:
+    Pixels: 2073600
+    Red:
+      min: 0  (0)
+      max: 255 (1)
+      mean: 92.1602 (0.361412)
+      standard deviation: 48.2387 (0.189171)
+      kurtosis: 1.3349
+      skewness: 1.1404
+      entropy: 0.915029
+    Green:
+      min: 0  (0)
+      max: 255 (1)
+      mean: 135.764 (0.532407)
+      standard deviation: 44.2134 (0.173386)
+      kurtosis: -0.439788
+      skewness: 0.409056
+      entropy: 0.909187
+    Blue:
+      min: 0  (0)
+      max: 255 (1)
+      mean: 95.7515 (0.375496)
+      standard deviation: 111.49 (0.437217)
+      kurtosis: -1.7192
+      skewness: 0.502369
+      entropy: 0.668509
+  Image statistics:
+    Overall:
+      min: 0  (0)
+      max: 255 (1)
+      mean: 107.892 (0.423105)
+      standard deviation: 67.9808 (0.266591)
+      kurtosis: -0.960077
+      skewness: 0.345061
+      entropy: 0.830909
+  Rendering intent: Perceptual
+  Gamma: 0.454545
+  Chromaticity:
+    red primary: (0.64,0.33)
+    green primary: (0.3,0.6)
+    blue primary: (0.15,0.06)
+    white point: (0.3127,0.329)
+  Background color: white
+  Border color: srgb(223,223,223)
+  Matte color: grey74
+  Transparent color: black
+  Interlace: None
+  Intensity: Undefined
+  Compose: Over
+  Page geometry: 1920x1080+0+0
+  Dispose: Undefined
+  Iterations: 0
+  Compression: JPEG
+  Quality: 75
+  Orientation: Undefined
+  Properties:
+    date:create: 2020-04-23T15:19:45+01:00
+    date:modify: 2020-04-23T15:18:48+01:00
+    jpeg:colorspace: 2
+    jpeg:sampling-factor: 2x2,1x1,1x1
+    signature: afffc9905633a931c7dddc33c3c270fe51e3e332d53f2ddff7e7e01c0b0e345b
+    xmp:GPSLatitude: 54,17.687778N
+    xmp:GPSLongitude: 2,15.022104W
+  Profiles:
+    Profile-xmp: 3078 bytes
+  Artifacts:
+    filename: WindowsXP.jpg
+    verbose: true
+  Tainted: False
+  Filesize: 234081B
+  Number pixels: 2073600
+  Pixels per second: 207.36MB
+  User time: 0.010u
+  Elapsed time: 0:01.009
+  Version: ImageMagick 6.9.10-23 Q16 x86_64 20190101 https://imagemagick.org
