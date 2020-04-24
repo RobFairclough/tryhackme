@@ -81,3 +81,44 @@ ctrl-z to background
 SeTakeOwnershipPrivilege looks right, and it is
 
 ## Looting
+Moving to a process that has permissions
+`ps` shows all processes, we need an x64 process (to match lsass)
+lsass is responsible for enfocing security policy
+we also need the process user to be NT AUTHORITY for root permissions
+Printer spool service matches this (suggested by the instructions)
+### What is the name of the printer spool service?
+spoolsv.exe
+We can migrate with 
+`migrate -n spoolsv.exe`
+or since we already have the id from finding it in `ps` we can
+`migrate 1264` which does the same thing
+`getuid` shows we are now NT AUTHORITY\SYSTEM aka root
+
+### loot the root
+we're loading in kiwi, the newer version of mimikatz with
+`load kiwi`
+`help kiwi` shows us the options
+
+### which command allows us to retrieve all credentials?
+`creds_all`
+This immediately shows us Dark's password - it pulls this from scheduled task.
+### what is dark's password?
+'password01!'
+
+## Post-Exploitation - quiz
+### What command dumps all the password hashes on the system?
+`hashdump`
+### What command allows us to watch the remote user's desktop in real time?
+`screenshare`
+### Record from a microphone attached to the system?
+`record_mic`
+### Complicate forensics by modifying timestamps (bad to do unless told to as pentest)
+`timestomp`
+### Create golden ticket with Mimikatz/kiwi?
+`golden_ticket_create`
+### Enable rdp 
+`run post/windows/manage/enable_rdp`
+
+## Extra Credit
+
+
