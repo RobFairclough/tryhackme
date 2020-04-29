@@ -1,0 +1,26 @@
+# Nmap 7.80 scan initiated Wed Apr 29 12:29:55 2020 as: nmap -sC -sV -vvv -oN nmapscanallports -p- 10.10.135.78
+Nmap scan report for jurassic.park (10.10.135.78)
+Host is up, received echo-reply ttl 63 (0.035s latency).
+Scanned at 2020-04-29 12:29:55 BST for 75s
+Not shown: 65533 closed ports
+Reason: 65533 resets
+PORT   STATE SERVICE REASON         VERSION
+22/tcp open  ssh     syn-ack ttl 63 OpenSSH 7.2p2 Ubuntu 4ubuntu2.6 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 6a:9f:76:b6:19:fb:e4:0a:a1:a5:46:af:b5:63:5a:49 (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDPcoObBcweouDBB5tuaPcGycrlDQnVoDQ+RnV2PR8+St8knLUB7jHdC+Dg3KppYuY/eSefSKdqd0fyEFuxX9+Yag/3jUTv5Bu+2ZNsUm9CpoBFnUdIXFKKa5/e/m/WRgFnT1JjH5FKuaOezFtC+9hMneETivzGRFRFQBg/1pFUAB1Oi80oYtiGPTeXa7DEiktx8KfyTf+EwhZ0mI729g2eqddVni1RGhWtPpWh69vHpToU1cwGNvrOXZ4bF9ab1k+D0mMtDgdPDJg+tkRq/HtJnOxxEA9gU/606plBnGCPtbwyFZWbBA6R+tYqTIlBYE7PgymThugKsCm+OlCmZ8vH
+|   256 28:8c:4b:eb:e3:25:78:39:68:ab:41:c9:f6:89:67:b4 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJu77Qb2+WdSQGfU+wfQ9lBwSoEZOKr/N21JxvGlfkOwii/REYQvhPJoBnfyZS1GhRCDxqQulxbermqZ+hxddnE=
+|   256 27:3d:bd:9c:04:d8:1a:05:b3:8c:ea:14:35:cf:6f:f3 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIN0qM7hJRi8MyBqA0CtPLXeRxTxpKRv3tOYaJhxMtlPJ
+80/tcp open  http    syn-ack ttl 63 Apache httpd 2.4.18 ((Ubuntu))
+|_http-favicon: Unknown favicon MD5: 019A6B943FC3AAA6D09FBA3C139A909A
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.18 (Ubuntu)
+|_http-title: Jarassic Park
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Apr 29 12:31:10 2020 -- 1 IP address (1 host up) scanned in 75.65 seconds
